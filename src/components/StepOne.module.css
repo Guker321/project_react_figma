@@ -1,0 +1,26 @@
+.stepper {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 5rem;
+}
+
+.stepper__circle {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 150, 243, 1);
+  width: 3.6rem;
+  height: 3.6rem;
+  border: thick double #fff;
+  border-radius: 50%;
+}
+.stepper__circle span {
+  font-size: 1.8rem;
+}
+
+.stepper__line {
+  transform: translate(1.7rem, -0.2rem);
+  height: 8.9rem;
+  border-left: 2px solid red;
+}

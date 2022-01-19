@@ -1,0 +1,40 @@
+.footer {
+  background-color: rgba(245, 245, 245, 1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  column-gap: 28rem;
+  padding: 3rem 5rem;
+  margin: 6rem 0 0 0;
+}
+
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  margin-bottom: 1rem;
+}
+
+.footer__heading {
+  font-weight: 700;
+}
+
+.footer a:link,
+.footer a:visited {
+  transition: all 0.4s;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+.footer a:hover,
+.footer a:active {
+  color: #777;
+}
+
+.rights {
+  padding: 2rem 5rem 2rem 5rem;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  background-color: #fff;
+}

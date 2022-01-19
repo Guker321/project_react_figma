@@ -1,0 +1,55 @@
+.rating {
+  position: relative;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.rating::before {
+  font-size: inherit;
+  content: '★★★★★';
+  display: block;
+}
+
+.rating_items {
+  font-size: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+.rating_item {
+  font-size: inherit;
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.rating_label {
+  font-size: inherit;
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+}
+.rating_label::before {
+  font-size: inherit;
+  content: '★';
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+.rating_label:hover,
+.rating_label:hover ~ .rating_label,
+.rating_label:checked ~ .rating_label:hover {
+  color: rgba(247, 197, 33, 0.801);
+}
+
+.rating_item:checked,
+.rating_item:checked ~ .rating_label {
+  color: rgba(255, 217, 0, 0.884)
+}
+
