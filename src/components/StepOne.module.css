@@ -1,7 +1,46 @@
+.section_step {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
 .stepper {
   display: flex;
   flex-direction: column;
   margin: 5rem 5rem;
+}
+
+.current_circle {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 150, 243, 1);
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  z-index: 999;
+  border: 2px solid rgba(33, 150, 243, 1);
+  box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.current_line {
+  border-color: rgba(33, 150, 243, 1) !important;
+}
+
+.latest_circle {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 150, 243, 1);
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  z-index: 999;
+  border: 2px solid rgba(33, 150, 243, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(33, 150, 243, 1) !important;
 }
 
 .stepper__circle {
@@ -9,18 +48,77 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(33, 150, 243, 1);
-  width: 3.6rem;
-  height: 3.6rem;
-  border: thick double #fff;
+  background-color: #ddd;
+  width: 4.8rem;
+  height: 4.8rem;
   border-radius: 50%;
+  z-index: 999;
+
+  box-shadow: inset 0px 0px 0px 2px #ddd;
 }
+
 .stepper__circle span {
   font-size: 1.8rem;
 }
 
 .stepper__line {
-  transform: translate(1.7rem, -0.2rem);
-  height: 8.9rem;
-  border-left: 2px solid red;
+  margin-bottom: -1rem;
+  transform: translate(2.4rem, -0.2rem);
+  height: 8.4rem;
+  border-left: 2px solid rgba(221, 221, 221, 1);
+}
+
+/* DESCRIPTION */
+.step_description {
+  display: flex;
+  flex-direction: column;
+}
+
+.step_description h2 {
+  color: var(--grey);
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  margin-bottom: 4rem;
+}
+.step_description h3 {
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  margin-bottom: 2rem;
+}
+.step_description p {
+  color: var(--grey);
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.step_description ol {
+  margin-bottom: 4rem;
+}
+
+.step_description li {
+  color: var(--grey);
+  font-size: 1.8rem;
+  margin-left: 3.8rem;
+}
+
+.step_link:link,
+.step_link:visited {
+  align-self: flex-start;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: black;
+  padding: 1.9rem 9rem;
+  transition: all 0.4s;
+  border-radius: 5px;
+}
+
+.step_link:hover,
+.step_link:active {
+  background-color: rgb(49, 47, 47);
 }
