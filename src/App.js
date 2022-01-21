@@ -4,13 +4,16 @@ import Product from './components/Product';
 import Overview from './components/Overview';
 import How from './components/How';
 import Footer from './components/Footer';
-import StepOne from './components/StepOne';
+import StepOne from './components/steps/StepOne.js';
+import StepTwo from './components/steps/StepTwo.js';
+import StepThree from './components/steps/StepThree.js';
 
 function App() {
   return (
     <>
       <Header />
-      <StepOne />
+      <StepThree />
+      {/* <StepOne /> */}
       {/* <Product /> */}
       <Overview />
       <How />

@@ -22,9 +22,10 @@
   height: 4.8rem;
   border-radius: 50%;
   z-index: 999;
-  border: 2px solid rgba(33, 150, 243, 1);
-  box-shadow: inset 0px 0px 0px 2px #fff;
+  border: 1px solid rgba(33, 150, 243, 1);
+  box-shadow: inset 0px 0px 0px 4px #fff;
 }
+
 .current_line {
   border-color: rgba(33, 150, 243, 1) !important;
 }
@@ -113,7 +114,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   background-color: black;
-  padding: 1.9rem 9rem;
+  padding: 1.9rem 4rem;
   transition: all 0.4s;
   border-radius: 5px;
 }
@@ -121,4 +122,19 @@
 .step_link:hover,
 .step_link:active {
   background-color: rgb(49, 47, 47);
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.link_secondary:link,
+.link_secondary:visited {
+  background-color: var(--grey);
+}
+
+.link_secondary:hover,
+.link_secondary:active {
+  background-color: rgb(85, 83, 83);
 }

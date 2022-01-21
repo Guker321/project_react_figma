@@ -1,6 +1,6 @@
 import styles from './StepOne.module.css';
 
-import picture_giveaway_step_1 from '../assets/picture_giveaway_step_1.png';
+import picture_giveaway_step_1 from '../../assets/picture_giveaway_step_1.png';
 
 const StepOne = () => {
   return (
