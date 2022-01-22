@@ -1,5 +1,7 @@
 import styles from './StepTwo.module.css';
 
+import { Link } from 'react-router-dom';
+
 import facebook_post from '../../assets/facebook_post.png';
 import press_here_block from '../../assets/press_here_block.png';
 
@@ -37,9 +39,9 @@ const StepOne = () => {
           will receive $10 Amazon Gift Card for each of your friends that
           participates in this giveaway!
         </p>
-        <a className={styles.step_link} href='/'>
+        <Link to='/main/step-three' className={styles.step_link}>
           CONTINUE
-        </a>
+        </Link>
       </div>
       <div className={styles.step_img}>
         <picture>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import img1 from '../assets/product_1.png';
 import img2 from '../assets/product_2.png';
 import img3 from '../assets/product_3.png';
@@ -22,9 +24,21 @@ const Product = () => {
               <img src={arrowUp} alt='arrow up' />
             </span>
           </button>
-          <img className={`${styles['product-images__smallImg']} ${styles.active}`} src={img1} alt='product img 1' />
-          <img className={styles['product-images__smallImg']} src={img2} alt='product img 2' />
-          <img className={styles['product-images__smallImg']} src={img3} alt='product img 3' />
+          <img
+            className={`${styles['product-images__smallImg']} ${styles.active}`}
+            src={img1}
+            alt='product img 1'
+          />
+          <img
+            className={styles['product-images__smallImg']}
+            src={img2}
+            alt='product img 2'
+          />
+          <img
+            className={styles['product-images__smallImg']}
+            src={img3}
+            alt='product img 3'
+          />
           <button>
             <img src={arrowDown} alt='arrow down' />
           </button>
@@ -57,7 +71,9 @@ const Product = () => {
                 <del>US$25.89</del>
                 <p>$0.00 FREE</p>
               </div>
-              <button className={styles['sell__btn']}>SELECT</button>
+              <Link to='step-one' className={styles['sell__btn']}>
+                SELECT
+              </Link>
               <img
                 className={styles['sell__logo']}
                 src={amazon_prime_logo}

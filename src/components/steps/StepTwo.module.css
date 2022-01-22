@@ -4,12 +4,13 @@
   align-items: center;
   justify-content: center;
   column-gap: 2rem;
+  margin: 5rem 5rem;
 }
 
 .stepper {
   display: flex;
   flex-direction: column;
-  margin: 5rem 5rem;
+  margin: 5rem 2rem;
 }
 
 .current_circle {

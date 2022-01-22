@@ -6,9 +6,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.footer__privacy}>
           <ul>
-            <li className={styles.footer__heading}>
-              <a href='/'>Privacy and Terms</a>
-            </li>
+            <li className={styles.footer__heading}>Privacy and Terms</li>
             <li>
               <a href='/'>Privacy Policy</a>
             </li>
@@ -20,9 +18,7 @@ const Footer = () => {
 
         <div className={styles.footer__help}>
           <ul>
-            <li className={styles.footer__heading}>
-              <a href='/'>Need Help?</a>
-            </li>
+            <li className={styles.footer__heading}>Need Help?</li>
             <li>
               <a href='/'>mail@gmail.com</a>
             </li>
@@ -31,9 +27,7 @@ const Footer = () => {
 
         <div className={styles.footer__social}>
           <ul>
-            <li className={styles.footer__heading}>
-              <a href='/'>Social</a>
-            </li>
+            <li className={styles.footer__heading}>Social</li>
             <li>
               <a href='/'>Facebook</a>
             </li>

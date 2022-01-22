@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './StepThree.module.css';
 
 import picture_giveaway_step_1 from '../../assets/picture_giveaway_step_1.png';
@@ -40,9 +42,9 @@ const StepOne = () => {
           <li>Donec commodo quis arcu eget pretium.</li>
         </ol>
         <div className={styles.btns}>
-          <a className={styles.step_link} href='/'>
+          <Link to='/main/step-four' className={styles.step_link}>
             YES, I HAVE
-          </a>
+          </Link>
           <a className={`${styles.step_link} ${styles.link_secondary}`} href='/'>
             NO, I DON'T HAVE
           </a>

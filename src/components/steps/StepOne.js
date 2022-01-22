@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './StepOne.module.css';
 
 import picture_giveaway_step_1 from '../../assets/picture_giveaway_step_1.png';
@@ -39,9 +41,15 @@ const StepOne = () => {
           <li>Mauris rutrum interdum condimentum.</li>
           <li>Donec commodo quis arcu eget pretium.</li>
         </ol>
-        <a className={styles.step_link} href='/'>AGREE AND CONTINUE</a>
+        <Link className={styles.step_link} to='/main/step-two'>
+          AGREE AND CONTINUE
+        </Link>
       </div>
-      <div className={styles.step_img}><picture><img src={picture_giveaway_step_1} alt="background with cream" /></picture></div>
+      <div className={styles.step_img}>
+        <picture>
+          <img src={picture_giveaway_step_1} alt='background with cream' />
+        </picture>
+      </div>
     </section>
   );
 };
